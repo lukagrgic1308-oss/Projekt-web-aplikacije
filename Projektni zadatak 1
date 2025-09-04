@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="hr"> 
+<head>
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Projektni zadatak, Web aplikacije, Luka Grgić</title>
+
+  <meta name="description" content="Projektni zadatak za predmet Web aplikacije studenta Luka Grgić koja služi za uploading slika i deklariranje istih prema sadržaju istih.">
+  <meta name="keywords" content="projekt, web aplikacije, .jpg, .pneg, Luka Grgić, VVG">
+  <meta name="author" content="Luka Grgić">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+
+
+  <meta property="og:title" content="Projektni zadatak">
+  <meta property="og:description" content="Projektni zadatak za predmet Web aplikacije.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.Slike_by_Luka.com/">
+  <meta property="og:image" content="https://www.Slike_by_Luka.com/preview.png">
+
+  <meta name="theme-color" content="#0a74da">
+</head>
+<body>
+  <header>
+    <h1>Slike by Luka Grgić</h1>
+    <nav>
+      <ul>
+        <li><a href="#pocetak">Početak</a></li>
+        <li><a href="#o-nama">O nama</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="pocetak">
+      <h2>Dobro došli na "Slike by Luka Grgić"</h2>
+      <p>Ovdje ide sadržaj početne sekcije.</p>
+    </section>
+
+    <section id="o-nama">
+      <h2>O nama</h2>
+      <p>Projektni zadatak studenta Luka Grgić za predmet Web aplikacije koji ima slike raspoređene prema sadržaju koji se nalazi na njima</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="godina"></span> Luka Grgić. Sva prava pridržana.</p>
+  </footer>
+
+  <script>
+    document.getElementById('godina').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
