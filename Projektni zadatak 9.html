@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>O nama - Slike by Luka Grgić</title>
+
+  <meta name="description" content="Stranica O nama projekta Slike by Luka Grgić.">
+  <meta name="keywords" content="O nama, Luka Grgić, projekt, VVG">
+  <meta name="author" content="Luka Grgić">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      width: 100%;
+      background: #0a74da;
+      color: white;
+    }
+
+    .banner {
+      width: 100%;
+      height: 180px;
+      background: url("banner.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner h1 {
+      background-color: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    nav {
+      background: #084d96;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #062f5e;
+      border-radius: 6px;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    video {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .social-icons {
+      margin: 10px 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <h1>O nama</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Početna stranica</a></li>
+        <li><a href="novosti.html">Novosti</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="o-nama.html">O nama</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>O nama</h1>
+    <h2>Projekt Slike by Luka Grgić</h2>
+
+    <p>Projekt “Slike by Luka Grgić” nastao je kako bi se stvorila jednostavna i pregledna web stranica za prikaz galerija i članaka vezanih za različite teme.</p>
+    <p>Naša misija je pružiti korisnicima mogućnost da pregledavaju slike s opisima, pregledavaju članke te komuniciraju putem kontakt forme. Kroz ovaj projekt primjenjujemo standarde HTML5 i moderne web tehnologije.</p>
+    
+    <video controls>
+      <source src="predstavljanje.mp4" type="video/mp4">
+      Vaš preglednik ne podržava video tag.
+    </video>
+
+    <p>Pored galerija i članaka, projekt uključuje i edukativni dio gdje korisnici mogu naučiti kako kreirati svoje galerije i dodavati opise. Sve funkcionalnosti su napravljene tako da stranica bude responzivna i prilagođena svim uređajima.</p>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="godina"></span> Luka Grgić. Sva prava pridržana.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><img src="facebook.jpg" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="Instagram.jpg" alt="Instagram"></a>
+      <a href="https://linkedin.com" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/lukagrgic1308" target="_blank"><img src="github.png" alt="GitHub"></a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('godina').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
