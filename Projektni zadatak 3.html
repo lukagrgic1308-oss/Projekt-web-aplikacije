@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="hr"> 
+<head>
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Projektni zadatak, Web aplikacije, Luka Grgić</title>
+
+  <meta name="description" content="Projektni zadatak za predmet Web aplikacije studenta Luka Grgić koja služi za uploading slika i deklariranje istih prema sadržaju istih.">
+  <meta name="keywords" content="projekt, web aplikacije, .jpg, .png, Luka Grgić, VVG">
+  <meta name="author" content="Luka Grgić">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:title" content="Projektni zadatak">
+  <meta property="og:description" content="Projektni zadatak za predmet Web aplikacije.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.Slike_by_Luka.com/">
+  <meta property="og:image" content="https://www.Slike_by_Luka.com/preview.png">
+
+  <meta name="theme-color" content="#0a74da">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      width: 100%;
+      background: #0a74da;
+      color: white;
+    }
+
+    .banner {
+      width: 100%;
+      height: 220px;
+      background: url("banner.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner h1 {
+      background-color: rgba(0,0,0,0.5);
+      padding: 12px 24px;
+      border-radius: 10px;
+    }
+
+    nav {
+      background: #084d96;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #062f5e;
+      border-radius: 6px;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    figure {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    figcaption {
+      font-style: italic;
+      margin-top: 5px;
+      color: #555;
+    }
+
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul li {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <h1>Slike by Luka Grgić</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Početna stranica</a></li>
+        <li><a href="novosti.html">Novosti</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="o-nama.html">O nama</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Dobro došli na "Slike by Luka Grgić"</h1>
+    <h2>Projekt web aplikacije za organizaciju slika</h2>
+
+    <p>Ova stranica nastala je kao projektni zadatak u sklopu kolegija Web aplikacije na VVG-u. Cilj je prikazati osnovnu HTML5 strukturu te frontend elemente.</p>
+    
+    <p>Glavni dio aplikacije fokusiran je na upload i kategorizaciju slika prema sadržaju. Time se omogućuje jednostavnije pretraživanje i organizacija vizual.</p>
+
+    <p>Stranica je izrađena koristeći moderne web standarde (HTML5, CSS3) te je prilagođena svim uređajima, od stolnih računala do pametnih telefona.</p>
+
+    <figure>
+      <img src="Početna stranica.jpg" alt="Početna stranica">
+      <figcaption>Slika prikazuje primjer rada s galerijom unutar aplikacije.</figcaption>
+    </figure>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="godina"></span> Luka Grgić. Sva prava pridržana.</p>
+  </footer>
+
+  <script>
+    document.getElementById('godina').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
