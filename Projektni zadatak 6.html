@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="hr"> 
+<head>
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Prvi članak - Slike by Luka Grgić</title>
+
+  <meta name="description" content="Galerija i opis prvog članka projekta Slike by Luka Grgić.">
+  <meta name="keywords" content="novosti, članci, galerija, slike, Luka Grgić, VVG">
+  <meta name="author" content="Luka Grgić">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      width: 100%;
+      background: #0a74da;
+      color: white;
+    }
+
+    .banner {
+      width: 100%;
+      height: 180px;
+      background: url("banner.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner h1 {
+      background-color: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    nav {
+      background: #084d96;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #062f5e;
+      border-radius: 6px;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .gallery figure {
+      flex: 1 1 200px;
+      text-align: center;
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    figcaption {
+      font-style: italic;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .back-link a {
+      text-decoration: none;
+      color: #0a74da;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .social-icons {
+      margin: 10px 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+      transition: transform 0.3s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul li {
+        margin: 5px 0;
+      }
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+      .gallery figure {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <h1>Prvi članak</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Početna stranica</a></li>
+        <li><a href="novosti.html">Novosti</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="o-nama.html">O nama</a></li>
+        <li><a href="galerija.html">Galerija</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Prvi članak</h1>
+    <h2>Projekt Slike by Luka Grgić</h2>
+    <p class="date">Objavljeno: 3. lipnja 2025.</p>
+
+    <p>U ovom projektu "Slike by Luka" se pokušava kreirati web stranica koja će omogućiti upload slika te dodjeljivanje atributa prema sadržaju koji se nalazi na slikama.</p>
+    <p>Neki od alata koji će se koristiti u ovom projektu su Visual basic koji služi kao osnovni program za kreiranje web stranice u HTML5 programskom jeziku.</p>
+    <p>Korisnik može podići sliku na web stranicu te joj dodjeliti "atribute" prema kojima se kasnije može pretražiti ta slika i sve slike koje imaju isti/e takve atribute.</p>
+    <p>Kao baza se koristi HTML5 programski jezik koji služi za kreiranje same web stranice.</p>
+    <p>Kako bi imali što bolju predodžbu molim pogledajte slike ispod.</p>
+
+    <div class="gallery">
+      <figure>
+        <img src="slika1.jpg" alt="Slika 1">
+        <figcaption>Prva slika - primjer slike u galeriji.</figcaption>
+      </figure>
+      <figure>
+        <img src="slika2.jpg" alt="Slika 2">
+        <figcaption>Druga slika - dodatni prikaz sadržaja.</figcaption>
+      </figure>
+      <figure>
+        <img src="slika3.jpg" alt="Slika 3">
+        <figcaption>Treća slika - vizualni prikaz projekta.</figcaption>
+      </figure>
+      <figure>
+        <img src="slika4.jpg" alt="Slika 4">
+        <figcaption>Četvrta slika - detalji aplikacije.</figcaption>
+      </figure>
+      <figure>
+        <img src="slika5.jpg" alt="Slika 5">
+        <figcaption>Peta slika - završni prikaz galerije.</figcaption>
+      </figure>
+    </div>
+
+    <div class="back-link">
+      <a href="novosti.html">&laquo; Natrag na Novosti</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="godina"></span> Luka Grgić. Sva prava pridržana.</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><img src="facebook.jpg" alt="Facebook"></a>
+      <a href="https://instagram.com" target="_blank"><img src="Instagram.jpg" alt="Instagram"></a>
+      <a href="https://linkedin.com" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/lukagrgic1308" target="_blank"><img src="github.png" alt="GitHub"></a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('godina').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
